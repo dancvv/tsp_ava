@@ -31,7 +31,7 @@ def argparser():
 	parser.add_argument('--lr_decay_step', metavar = 'LRDS', type = int, default = 5e3, help = 'learning rate scheduler, decay every 5000 steps')
 	
 	# inference
-	parser.add_argument('-ap', '--act_model_path', metavar = 'AMP', type = str, help = 'load actor model path')
+	parser.add_argument('-ap', '--act_model_path', metavar = 'AMP',default= 'Pt/train20_1113_12_12_step14999_act.pt', type = str, help = 'load actor model path')
 	parser.add_argument('--seed', metavar = 'SEED', type = int, default = 1, help = 'random seed number for inference, reproducibility')
 	parser.add_argument('-al', '--alpha', metavar = 'ALP', type = float, default = 0.99, help = 'alpha decay in active search')
 	
